@@ -6,12 +6,15 @@ spring:
     password: root
   jpa:
     hibernate:
-      naming.implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-      naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
 eureka:
   client:
-    register-with-eureka:true
+    register-with-eureka: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
+
 server:
-  port: 7000 
+  port: 7000
