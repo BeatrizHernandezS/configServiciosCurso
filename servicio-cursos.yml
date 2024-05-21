@@ -11,8 +11,6 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
 eureka:
-  instance:
-    hostname: localhost
   client:
     register-with-eureka: true
     serviceUrl:
