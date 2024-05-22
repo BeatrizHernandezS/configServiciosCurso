@@ -12,7 +12,6 @@ spring:
 
 eureka:
   instance:
-    hostname: localhost
     instanceId: intancia1
   client:
     register-with-eureka: true
